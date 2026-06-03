@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-zzz-black: #0a0a0a;
+  --color-zzz-yellow: #F7FF36;
+  --color-zzz-white: #f5f5f5;
+  --font-display: 'Archivo Black', system-ui, sans-serif;
+  --font-body: 'Roboto Condensed', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-zzz-black text-zzz-white antialiased;
+    font-family: var(--font-body);
+  }
+}
+
+@layer utilities {
+  .zzz-neon-border {
+    box-shadow:
+      0 0 8px #F7FF36,
+      0 0 16px rgba(247, 255, 54, 0.35),
+      inset 0 0 4px rgba(247, 255, 54, 0.14);
+  }
+
+  .zzz-neon-border-hover:hover {
+    box-shadow:
+      0 0 12px #F7FF36,
+      0 0 24px rgba(247, 255, 54, 0.55),
+      0 0 40px rgba(247, 255, 54, 0.22),
+      inset 0 0 6px rgba(247, 255, 54, 0.18);
+  }
+
+  .zzz-clip-card {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%);
+  }
+}

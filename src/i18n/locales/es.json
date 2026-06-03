@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "ZZZ — Página principal"
+  },
+  "nav": {
+    "mainAria": "Navegación principal",
+    "logoAlt": "Logo ZZZ",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "menuDialogAria": "Menú de navegación",
+    "closeOverlayAria": "Cerrar menú",
+    "screenReaderMenu": "Menú",
+    "screenReaderClose": "Cerrar"
+  },
+  "hero": {
+    "tagline": "Texto de ejemplo que describe qué hace la página.",
+    "title": "Esta es la página principal."
+  },
+  "actions": {
+    "gridAria": "Acciones principales",
+    "TeamBuilder": {
+      "title": "Constructor de equipo",
+      "description": "Construye tu equipo desde cero o verifica cuales agentes son los mejores para ti.",
+      "imageAlt": "Ilustración de agentes"
+    },
+    "CharacterBuilder": {
+      "title": "Constructor de personaje",
+      "description": "Verifica como puedes construir tu personaje favorito con W-Engine,Discos Duros etc.",
+      "imageAlt": "Ilustración de personajes"
+    },
+    "GameMechanics": {
+      "title": "Mecánicas de juego",
+      "description": "Verifica como funcionan las mecánicas del juego, como el sistema de combate, el sistema de inventario, el sistema de habilidades, etc.",
+      "imageAlt": "Ilustración de mecánicas de juego"
+    }
+  },
+  "footer": {
+    "title": "Pie de página",
+    "copyright": "© {{year}} ZZZ Concept"
+  },
+  "brand": {
+    "name": "Zenless Zone Zero"
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "Inglés",
+    "es": "Español"
+  }
+}
