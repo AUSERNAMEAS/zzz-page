@@ -12,7 +12,12 @@
     "menuDialogAria": "Navigation menu",
     "closeOverlayAria": "Close menu",
     "screenReaderMenu": "Menu",
-    "screenReaderClose": "Close"
+    "screenReaderClose": "Close",
+    "home": "Home",
+    "homeLabel": "00",
+    "homeDescription": "Return to the main page.",
+    "musicOn": "Turn music on",
+    "musicOff": "Turn music off"
   },
   "hero": {
     "tagline": "Placeholder to describe what the page does.",
@@ -47,5 +52,28 @@
     "label": "Language",
     "en": "English",
     "es": "Spanish"
+  },
+  "teamBuilder": {
+    "meta": {
+      "title": "ZZZ — Team Builder"
+    },
+    "tagline": "Placeholder to describe what the page does.",
+    "title": "This is the main page",
+    "recommendation": "Text for recommendations of agents that can fit, or rate the team.",
+    "rateTeam": "Rate Team",
+    "lookForTeammate": "Look for Teammate",
+    "modalTitle": "Select Agent",
+    "vacant": "Empty / Vacant",
+    "closeModal": "Close",
+    "slotsAria": "Team slots",
+    "addAgent": "Add agent to team",
+    "agentPortrait": "{{name}} portrait",
+    "agents": {
+      "anby": "Anby Demara",
+      "billy": "Billy Kid",
+      "nekomiya": "Nekomiya Mana",
+      "nicole": "Nicole Demara",
+      "yeShunguang": "Ye Shunguang"
+    }
   }
 }

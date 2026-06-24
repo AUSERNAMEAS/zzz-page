@@ -12,7 +12,12 @@
     "menuDialogAria": "Menú de navegación",
     "closeOverlayAria": "Cerrar menú",
     "screenReaderMenu": "Menú",
-    "screenReaderClose": "Cerrar"
+    "screenReaderClose": "Cerrar",
+    "home": "Inicio",
+    "homeLabel": "00",
+    "homeDescription": "Volver a la página principal.",
+    "musicOn": "Activar música",
+    "musicOff": "Desactivar música"
   },
   "hero": {
     "tagline": "Texto de ejemplo que describe qué hace la página.",
@@ -47,5 +52,28 @@
     "label": "Idioma",
     "en": "Inglés",
     "es": "Español"
+  },
+  "teamBuilder": {
+    "meta": {
+      "title": "ZZZ — Constructor de equipo"
+    },
+    "tagline": "Texto de ejemplo que describe qué hace la página.",
+    "title": "Esta es la página principal",
+    "recommendation": "Texto con recomendaciones de agentes que encajan, o para valorar el equipo.",
+    "rateTeam": "Valorar equipo",
+    "lookForTeammate": "Buscar compañero",
+    "modalTitle": "Seleccionar agente",
+    "vacant": "Vacío / Libre",
+    "closeModal": "Cerrar",
+    "slotsAria": "Espacios del equipo",
+    "addAgent": "Añadir agente al equipo",
+    "agentPortrait": "Retrato de {{name}}",
+    "agents": {
+      "anby": "Anby Demara",
+      "billy": "Billy Kid",
+      "nekomiya": "Nekomiya Mana",
+      "nicole": "Nicole Demara",
+      "yeShunguang": "Ye Shunguang"
+    }
   }
 }

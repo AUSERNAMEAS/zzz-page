@@ -4,6 +4,7 @@ import { actionTextKey } from '../../../i18n/actionTranslations'
 import { useTranslation } from '../../../i18n'
 import zzzLogo from '../../../assets/appImages/zzzLogo.webp'
 import { LanguageSwitcher } from './LanguageSwitcher'
+import { MusicToggle } from './MusicToggle'
 
 export function Navbar() {
   const { t } = useTranslation()
@@ -20,7 +21,7 @@ export function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-white/10 bg-zzz-black/90 backdrop-blur-sm">
+      <header className="sticky top-0 z-60 border-b border-white/10 bg-zzz-black/90 backdrop-blur-sm">
         <nav
           className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8"
           aria-label={t('nav.mainAria')}
@@ -30,8 +31,13 @@ export function Navbar() {
             <img src={zzzLogo} alt={t('nav.logoAlt')} className="h-10 w-10" />
           </picture>
 
-          <div className="flex items-center gap-3">
-            <LanguageSwitcher />
+          <div className="flex min-w-0 items-center justify-end gap-3">
+            <div className="flex-1 min-w-0">
+              <MusicToggle />
+            </div>
+            <div className="hidden sm:flex">
+              <LanguageSwitcher />
+            </div>
 
             <button
               type="button"
@@ -68,7 +74,7 @@ export function Navbar() {
 
       <div
         id="zzz-menu-overlay"
-        className={`fixed inset-0 z-50 transition-opacity duration-300 ${
+        className={`fixed inset-0 z-40 flex justify-end transition-opacity duration-300 ${
           isMenuOpen ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'
         }`}
         role="dialog"
@@ -85,7 +91,7 @@ export function Navbar() {
         />
 
         <aside
-          className={`absolute right-0 top-0 flex h-full w-full max-w-sm flex-col border-l-2 border-zzz-yellow bg-zzz-black transition-transform duration-300 ease-out sm:max-w-md ${
+          className={`fixed right-0 top-0 z-50 flex h-full w-full max-w-[20rem] flex-col border-0 border-l-2 border-zzz-yellow bg-zzz-black transition-transform duration-300 ease-out sm:max-w-md sm:border-l-2 ${
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
@@ -103,6 +109,27 @@ export function Navbar() {
           </div>
 
           <ul className="flex flex-1 flex-col gap-1 overflow-y-auto p-5">
+            <li>
+              <a
+                href="#"
+                className="block border border-zzz-yellow/40 bg-zzz-yellow/10 px-4 py-4 transition-colors hover:border-zzz-yellow hover:bg-zzz-yellow/20"
+                tabIndex={isMenuOpen ? 0 : -1}
+                onClick={(event) => {
+                  event.preventDefault()
+                  window.location.hash = ''
+                  closeMenu()
+                }}
+              >
+                <span className="mb-1 block font-display text-xs uppercase tracking-widest text-zzz-yellow">
+                  {t('nav.homeLabel')}
+                </span>
+                <span className="font-display text-lg font-black uppercase italic text-zzz-white">
+                  {t('nav.home')}
+                </span>
+                <span className="mt-1 block text-sm text-white/60">{t('nav.homeDescription')}</span>
+              </a>
+            </li>
+
             {actionOptions.map((option, index) => (
               <li key={option.id}>
                 <a
